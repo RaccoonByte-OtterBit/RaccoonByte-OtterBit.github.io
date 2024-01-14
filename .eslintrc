@@ -4,7 +4,7 @@
   "plugins": ["@typescript-eslint"],
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
   },
   "rules": {
     "react/jsx-filename-extension": [0, { "extensions": [".tsx"] }],
@@ -16,15 +16,29 @@
         "jsx": "never",
         "ts": "never",
         "tsx": "never",
-        "json": "never"
-      }
-    ]
+        "json": "never",
+      },
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "test.{ts,tsx}", // repos with a single test file
+          "test-*.{ts,tsx}", // repos with multiple top-level test files
+          "**/*{.,_}{test,spec}.{ts,tsx}", // tests where the extension or filename suffix denotes that it is a test
+          "**/jest.config.ts", // jest config
+          "**/jest.setup.ts", // jest setup
+          "**/src/setupTests.ts", // tests setup
+        ],
+        "optionalDependencies": false,
+      },
+    ],
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
-      }
-    }
-  }
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"],
+      },
+    },
+  },
 }

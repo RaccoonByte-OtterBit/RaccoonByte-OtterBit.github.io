@@ -22,12 +22,12 @@ function App() {
         </div>
       </header>
       <body>
-        <div className="content-wrapper">
+        <div className="page-content">
           <p>Hello, Bono-log!</p>
         </div>
       </body>
-      <footer>
-        <div className="footer-wrapper">
+      <footer className="page-footer-wrapper">
+        <div className="page-footer">
           <p>copyright</p>
         </div>
       </footer>

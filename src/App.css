@@ -1,0 +1,21 @@
+.page-wrapper {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+
+.home-section {
+  float: left;
+}
+
+.category-section {
+  float: right;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.link {
+  padding: 5px;
+}

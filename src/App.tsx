@@ -21,7 +21,16 @@ function App() {
           </div>
         </div>
       </header>
-      <p>Hello, Bono-log!</p>
+      <body>
+        <div className="content-wrapper">
+          <p>Hello, Bono-log!</p>
+        </div>
+      </body>
+      <footer>
+        <div className="footer-wrapper">
+          <p>copyright</p>
+        </div>
+      </footer>
     </div>
   );
 }

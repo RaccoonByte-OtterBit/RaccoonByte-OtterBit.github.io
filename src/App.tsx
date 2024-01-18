@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import ReactMarkdown from 'react-markdown';
 
 function App() {
+  const [postContent, setPostContent] = useState('');
+
+  useEffect(() => {
+    const postPath = '/post/test.md';
+
+    fetch(postPath)
+      .then((response) => response.text())
+      .then((data) => {
+        setPostContent(data);
+      });
+  }, []);
+
   return (
     <div className="page-wrapper">
       <header className="page-header">
@@ -24,7 +36,7 @@ function App() {
       </header>
       <body>
         <div className="page-content">
-          <ReactMarkdown>a</ReactMarkdown>
+          <ReactMarkdown>{postContent}</ReactMarkdown>
           <div className="post-card-wrapper">
             <a className="post-card" href="/">
               <div className="post-title">title</div>

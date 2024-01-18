@@ -1,8 +1,7 @@
 ---
 title: '안녕하세요!',
 date: '2024/01/18',
-author: 'otter'
-category: 'test',
+content: '
 ---
 
 # test입니다.

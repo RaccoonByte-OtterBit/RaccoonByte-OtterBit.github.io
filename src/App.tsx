@@ -23,6 +23,12 @@ function App() {
       </header>
       <body>
         <div className="page-content">
+          <div className="post-card-wrapper">
+            <a className="post-card" href="/">
+              <div className="post-title">title</div>
+              <p className="post-content">content</p>
+            </a>
+          </div>
           <p>Hello, Bono-log!</p>
         </div>
       </body>

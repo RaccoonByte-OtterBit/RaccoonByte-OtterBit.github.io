@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import ReactMarkdown from 'react-markdown';
+import markdownContent from '../content/test.md';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       </header>
       <body>
         <div className="page-content">
+          <ReactMarkdown>{markdownContent}</ReactMarkdown>
           <div className="post-card-wrapper">
             <a className="post-card" href="/">
               <div className="post-title">title</div>

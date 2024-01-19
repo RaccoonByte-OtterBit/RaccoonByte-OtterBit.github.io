@@ -11,7 +11,8 @@ function App() {
     fetch(postPath)
       .then((response) => response.text())
       .then((data) => {
-        setPostContent(data);
+        const withoutFM = data.replace(/^---[\s\S]*?---/, ''); // Frontmatter 제거
+        setPostContent(withoutFM);
       });
   }, []);
 
@@ -36,14 +37,15 @@ function App() {
       </header>
       <body>
         <div className="page-content">
-          <ReactMarkdown>{postContent}</ReactMarkdown>
+          <p>Hello, Bono-log!</p>
           <div className="post-card-wrapper">
             <a className="post-card" href="/">
               <div className="post-title">title</div>
-              <p className="post-content">content</p>
+              <p className="post-content">
+                <ReactMarkdown>{postContent}</ReactMarkdown>
+              </p>
             </a>
           </div>
-          <p>Hello, Bono-log!</p>
         </div>
       </body>
       <footer className="page-footer-wrapper">

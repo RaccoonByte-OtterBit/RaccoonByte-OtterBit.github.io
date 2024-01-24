@@ -1,1 +1,27 @@
+.page-wrapper {
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
 
+.page-header {
+  padding: 20px;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-section {
+  float: left;
+}
+
+.category-section {
+  float: right;
+}
+
+.link {
+  padding: 5px;
+}

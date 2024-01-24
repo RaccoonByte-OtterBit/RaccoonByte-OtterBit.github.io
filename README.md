@@ -1,5 +1,7 @@
 # 🐾 Bono-Log
 
+## Introduction
+
 안녕하세요! 😀
 
 Bono-Log는, Raccoon과 Otter가 함께 만드는 Tech Blog입니다. \
@@ -9,7 +11,7 @@ Bono-Log는, Raccoon과 Otter가 함께 만드는 Tech Blog입니다. \
 [🚀 Bono-Log 바로가기](https://bono-log.github.io/)
 
 
-# 👬 About Us
+## 👬 About Us
 
 ### 🦝 Raccoon is..
 - 비전공 현직 개발자입니다.
@@ -18,7 +20,7 @@ Bono-Log는, Raccoon과 Otter가 함께 만드는 Tech Blog입니다. \
 - 비전공 개발 취준생입니다.
 
 
-# ⚡ Software Used
+## ⚡ Software Used
 
 Bono-Log 개발에는 아래와 같은 기술 스택이 사용되었습니다! 💪
 
@@ -26,4 +28,20 @@ Bono-Log 개발에는 아래와 같은 기술 스택이 사용되었습니다! �
 | :----: | :----: |
 | Language | TypeScript |
 | FrameWork | React |
-| CI/CD | Git Actions & Git Pages |
+| CI/CD | GitHub Actions <br> GitHub Pages |
+| Project Managing | GitHub Projects <br> GitHub MileStones <br> GitHub Issues |
+
+
+## 📌 Develop Rule
+
+효과적인 협업&개발을 위해 저희가 채택한 팀 규칙입니다. 😀
+
+
+## 👀 Contact Us
+
+저희와 소통하고 싶으시다면 [GitHub Issues](https://github.com/bono-log/bono-log.github.io/issues/new/choose)를 활용해주세요! 😁 
+
+- 🐛 Bug Report
+- 📃 Suggestion
+- 🤷‍♀️ Question
+- 🪐 Etc.. 

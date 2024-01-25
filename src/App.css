@@ -14,6 +14,33 @@
   justify-content: space-between;
 }
 
+.post-card-wrapper {
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .post-title {
+      text-align: left;
+    }
+    .post-content {
+      text-align: left;
+    }
+  }
+}
+
 .home-section {
   float: left;
 }

@@ -60,9 +60,11 @@ function App() {
               <p className="post-content">
                 <ReactMarkdown>{postContent}</ReactMarkdown>
               </p>
-              <div className="post-date">{postFrontmatter.date}</div>
-              <div className="post-categories">
-                {postFrontmatter.categories}
+              <div className="post-info">
+                <div className="post-date">{postFrontmatter.date}</div>
+                <div className="post-categories">
+                  {postFrontmatter.categories}
+                </div>
               </div>
             </a>
           </div>

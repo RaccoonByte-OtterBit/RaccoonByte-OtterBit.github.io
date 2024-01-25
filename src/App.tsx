@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import ReactMarkdown from 'react-markdown';
+import grayMatter from 'gray-matter-browser';
 
 function App() {
   const [postContent, setPostContent] = useState('');
+  const [postFrontmatter, setPostFrontmatter] = useState<{
+    title: string;
+    date: string;
+    author: string;
+    categories: string;
+  }>({
+    title: '',
+    date: '',
+    author: '',
+    categories: '',
+  });
 
   useEffect(() => {
     const postPath = '/post/test.md';
@@ -11,8 +23,12 @@ function App() {
     fetch(postPath)
       .then((response) => response.text())
       .then((data) => {
-        const withoutFM = data.replace(/^---[\s\S]*?---/, ''); // Frontmatter 제거
-        setPostContent(withoutFM);
+        const { content, data: frontmatterData } = grayMatter(data);
+        setPostContent(content);
+        setPostFrontmatter((Frontmatter) => ({
+          ...Frontmatter,
+          ...frontmatterData,
+        }));
       });
   }, []);
 
@@ -40,10 +56,16 @@ function App() {
           <p>Hello, Bono-log!</p>
           <div className="post-card-wrapper">
             <a className="post-card" href="/">
-              <div className="post-title">title</div>
+              <div className="post-title">{postFrontmatter.title}</div>
               <p className="post-content">
                 <ReactMarkdown>{postContent}</ReactMarkdown>
               </p>
+              <div className="post-info">
+                <div className="post-date">{postFrontmatter.date}</div>
+                <div className="post-categories">
+                  {postFrontmatter.categories}
+                </div>
+              </div>
             </a>
           </div>
         </div>

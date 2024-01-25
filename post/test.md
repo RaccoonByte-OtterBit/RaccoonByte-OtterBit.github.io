@@ -1,7 +1,8 @@
 ---
-title: '안녕하세요!',
-date: '2024/01/18',
-content: 'test'
+title: react로 github blog 만들기
+date: '2023-01-25 00:00:00'
+author: otter
+categories: blog
 ---
 
 # test입니다.

@@ -4,17 +4,18 @@ import ReactMarkdown from 'react-markdown';
 import grayMatter from 'gray-matter-browser';
 
 function App() {
-  const [postContent, setPostContent] = useState('');
-  const [postFrontmatter, setPostFrontmatter] = useState<{
+  const [postData, setPostData] = useState<{
     title: string;
     date: string;
     author: string;
     categories: string;
+    content: string;
   }>({
     title: '',
     date: '',
     author: '',
     categories: '',
+    content: '',
   });
 
   useEffect(() => {
@@ -24,11 +25,13 @@ function App() {
       .then((response) => response.text())
       .then((data) => {
         const { content, data: frontmatterData } = grayMatter(data);
-        setPostContent(content);
-        setPostFrontmatter((Frontmatter) => ({
-          ...Frontmatter,
-          ...frontmatterData,
-        }));
+        setPostData({
+          title: frontmatterData.title,
+          date: frontmatterData.date,
+          author: frontmatterData.author,
+          categories: frontmatterData.categories,
+          content,
+        });
       });
   }, []);
 
@@ -56,15 +59,13 @@ function App() {
           <p>Hello, Bono-log!</p>
           <div className="post-card-wrapper">
             <a className="post-card" href="/">
-              <div className="post-title">{postFrontmatter.title}</div>
+              <div className="post-title">{postData.title}</div>
               <p className="post-content">
-                <ReactMarkdown>{postContent}</ReactMarkdown>
+                <ReactMarkdown>{postData.content}</ReactMarkdown>
               </p>
               <div className="post-info">
-                <div className="post-date">{postFrontmatter.date}</div>
-                <div className="post-categories">
-                  {postFrontmatter.categories}
-                </div>
+                <div className="post-date">{postData.date}</div>
+                <div className="post-categories">{postData.categories}</div>
               </div>
             </a>
           </div>

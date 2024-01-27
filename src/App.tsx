@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import ReactMarkdown from 'react-markdown';
 import grayMatter from 'gray-matter-browser';
+import PostCard from './component/PostCard';
 
 function App() {
   const [postData, setPostData] = useState<{
@@ -58,6 +59,7 @@ function App() {
         <div className="page-content">
           <p>Hello, Bono-log!</p>
           <div className="post-card-wrapper">
+            <PostCard postData={postData} />
             <a className="post-card" href="/">
               <div className="post-title">{postData.title}</div>
               <p className="post-content">

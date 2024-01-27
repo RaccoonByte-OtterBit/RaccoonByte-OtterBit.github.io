@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 interface PostData {
+  id: number;
   title: string;
   content: string;
   date: string;
@@ -13,8 +14,9 @@ interface PostCardProps {
 }
 
 function PostCard({ postData }: PostCardProps) {
+  const postUrl = `/post/${postData.id}`;
   return (
-    <a className="post-card" href="/">
+    <a className="post-card" href={postUrl}>
       <div className="post-title">{postData.title}</div>
       <p className="post-content">
         <ReactMarkdown>{postData.content}</ReactMarkdown>

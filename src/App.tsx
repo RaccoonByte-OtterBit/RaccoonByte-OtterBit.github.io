@@ -5,6 +5,7 @@ import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
 import Layout from './component/Layout';
+import Intro from './component/Intro';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -45,13 +46,9 @@ function App() {
   return (
     <Layout>
       <PageHeader />
-      <body>
-        <div className="page-content">
-          <p>Hello, Bono-log!</p>
-          <PostCard postList={postList} />
-          {postPaths.length >= 4 && <button type="button">more</button>}
-        </div>
-      </body>
+      <Intro />
+      <PostCard postList={postList} />
+      {postPaths.length >= 4 && <button type="button">more</button>}
       <PageFooter />
     </Layout>
   );

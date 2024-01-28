@@ -61,10 +61,7 @@ function App() {
       <body>
         <div className="page-content">
           <p>Hello, Bono-log!</p>
-
-          {postList.map((postData) => (
-            <PostCard key={postData.id} postData={postData} />
-          ))}
+          <PostCard postList={postList} />
           {postPaths.length >= 4 && <button type="button">more</button>}
         </div>
       </body>

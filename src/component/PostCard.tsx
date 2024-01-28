@@ -30,6 +30,7 @@ function PostCard({ postList }: PostCardProps) {
           </a>
         </div>
       ))}
+      {postList.length >= 4 && <button type="button">more</button>}
     </div>
   );
 }

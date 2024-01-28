@@ -48,7 +48,6 @@ function App() {
       <PageHeader />
       <Intro />
       <PostCard postList={postList} />
-      {postPaths.length >= 4 && <button type="button">more</button>}
       <PageFooter />
     </Layout>
   );

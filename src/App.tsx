@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import ReactMarkdown from 'react-markdown';
 import grayMatter from 'gray-matter-browser';
+import PostCard from './component/PostCard';
 
 function App() {
-  const [postContent, setPostContent] = useState('');
-  const [postFrontmatter, setPostFrontmatter] = useState<{
+  const [postData, setPostData] = useState<{
     title: string;
     date: string;
     author: string;
     categories: string;
+    content: string;
   }>({
     title: '',
     date: '',
     author: '',
     categories: '',
+    content: '',
   });
 
   useEffect(() => {
@@ -24,11 +25,13 @@ function App() {
       .then((response) => response.text())
       .then((data) => {
         const { content, data: frontmatterData } = grayMatter(data);
-        setPostContent(content);
-        setPostFrontmatter((Frontmatter) => ({
-          ...Frontmatter,
-          ...frontmatterData,
-        }));
+        setPostData({
+          title: frontmatterData.title,
+          date: frontmatterData.date,
+          author: frontmatterData.author,
+          categories: frontmatterData.categories,
+          content,
+        });
       });
   }, []);
 
@@ -55,18 +58,7 @@ function App() {
         <div className="page-content">
           <p>Hello, Bono-log!</p>
           <div className="post-card-wrapper">
-            <a className="post-card" href="/">
-              <div className="post-title">{postFrontmatter.title}</div>
-              <p className="post-content">
-                <ReactMarkdown>{postContent}</ReactMarkdown>
-              </p>
-              <div className="post-info">
-                <div className="post-date">{postFrontmatter.date}</div>
-                <div className="post-categories">
-                  {postFrontmatter.categories}
-                </div>
-              </div>
-            </a>
+            <PostCard postData={postData} />
           </div>
         </div>
       </body>

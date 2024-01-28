@@ -2,12 +2,9 @@
 id: 3
 
 title: 3번째 게시물
-
 date: '2023-01-28 00:00:00'
-
 author: otter
-
-categories: cate
+categories: categories
 ---
 
 # test3입니다.

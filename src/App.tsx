@@ -4,6 +4,7 @@ import grayMatter from 'gray-matter-browser';
 import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
+import Layout from './component/Layout';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -42,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <div className="page-wrapper">
+    <Layout>
       <PageHeader />
       <body>
         <div className="page-content">
@@ -52,7 +53,7 @@ function App() {
         </div>
       </body>
       <PageFooter />
-    </div>
+    </Layout>
   );
 }
 

@@ -65,7 +65,7 @@ function App() {
             {postList.map((postData) => (
               <PostCard key={postData.id} postData={postData} />
             ))}
-            <button type="button">more</button>
+            {postPaths.length >= 4 && <button type="button">more</button>}
           </div>
         </div>
       </body>

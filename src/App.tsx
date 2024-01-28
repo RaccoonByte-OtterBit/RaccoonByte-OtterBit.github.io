@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import grayMatter from 'gray-matter-browser';
-
 import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';

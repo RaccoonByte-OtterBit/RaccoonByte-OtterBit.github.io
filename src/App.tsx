@@ -64,6 +64,7 @@ function App() {
             {postList.map((postData) => (
               <PostCard key={postData.id} postData={postData} />
             ))}
+            <button type="button">more</button>
           </div>
         </div>
       </body>

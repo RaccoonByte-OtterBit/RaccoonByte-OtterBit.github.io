@@ -1,6 +1,6 @@
-name: ✨Feature request
-description: 앞으로 추가해야할 기능이 있다면 설명해주세요!
-title: "✨[Feature]제목을 입력하세요"
+name: Backlog Create
+description: 앞으로 진행되어야할 작업을 추가해주세요!
+title: "제목을 입력하세요"
 labels: [
   "enhancement"
 ]

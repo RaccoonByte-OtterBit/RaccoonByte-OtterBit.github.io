@@ -15,8 +15,9 @@ function App() {
     }[]
   >([]);
 
+  const postPaths = ['/post/test.md', '/post/test2.md', '/post/test3.md'];
+
   useEffect(() => {
-    const postPaths = ['/post/test.md', '/post/test2.md', '/post/test3.md'];
     Promise.all(
       postPaths.map((postPath) =>
         fetch(postPath)

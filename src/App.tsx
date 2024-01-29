@@ -4,6 +4,7 @@ import grayMatter from 'gray-matter-browser';
 import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
+import Bio from './component/Bio';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -46,7 +47,7 @@ function App() {
       <PageHeader />
       <body>
         <div className="page-content">
-          <p>Hello, Bono-log!</p>
+          <Bio />
           <PostCard postList={postList} />
         </div>
       </body>

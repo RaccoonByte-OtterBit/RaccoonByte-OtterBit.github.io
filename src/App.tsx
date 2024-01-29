@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import grayMatter from 'gray-matter-browser';
+import PageHeader from './component/PageHeader';
+import PageFooter from './component/PageFooter';
+import Bio from './component/Bio';
 import PostCard from './component/PostCard';
+import './App.css';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -41,34 +44,14 @@ function App() {
 
   return (
     <div className="page-wrapper">
-      <header className="page-header">
-        <div className="page-header-wrapper">
-          <div className="home-section">
-            <a className="link" href="/">
-              bono-log
-            </a>
-          </div>
-          <div className="category-section">
-            <a className="link" href="/">
-              about
-            </a>
-            <a className="link" href="/">
-              pages
-            </a>
-          </div>
-        </div>
-      </header>
+      <PageHeader />
       <body>
         <div className="page-content">
-          <p>Hello, Bono-log!</p>
+          <Bio />
           <PostCard postList={postList} />
         </div>
       </body>
-      <footer className="page-footer-wrapper">
-        <div className="page-footer">
-          <p>copyright</p>
-        </div>
-      </footer>
+      <PageFooter />
     </div>
   );
 }

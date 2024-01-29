@@ -57,9 +57,7 @@ function App() {
       <body>
         <div className="page-content">
           <p>Hello, Bono-log!</p>
-          <div className="post-card-wrapper">
-            <PostCard postData={postData} />
-          </div>
+          <PostCard postData={postData} />
         </div>
       </body>
       <footer className="page-footer-wrapper">

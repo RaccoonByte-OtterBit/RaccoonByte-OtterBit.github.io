@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 interface PostData {
+  id: number;
   title: string;
   content: string;
   date: string;
@@ -9,21 +10,28 @@ interface PostData {
 }
 
 interface PostCardProps {
-  postData: PostData;
+  postList: PostData[];
 }
 
-function PostCard({ postData }: PostCardProps) {
+function PostCard({ postList }: PostCardProps) {
   return (
-    <a className="post-card" href="/">
-      <div className="post-title">{postData.title}</div>
-      <p className="post-content">
-        <ReactMarkdown>{postData.content}</ReactMarkdown>
-      </p>
-      <div className="post-info">
-        <div className="post-date">{postData.date}</div>
-        <div className="post-categories">{postData.categories}</div>
-      </div>
-    </a>
+    <div className="post-card-list">
+      {postList.map((postData) => (
+        <div key={postData.id} className="post-card-wrapper">
+          <a className="post-card" href={`/post/${postData.id}`}>
+            <div className="post-title">{postData.title}</div>
+            <p className="post-content">
+              <ReactMarkdown>{postData.content}</ReactMarkdown>
+            </p>
+            <div className="post-info">
+              <div className="post-date">{postData.date}</div>
+              <div className="post-categories">{postData.categories}</div>
+            </div>
+          </a>
+        </div>
+      ))}
+      {postList.length >= 4 && <button type="button">more</button>}
+    </div>
   );
 }
 

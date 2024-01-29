@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import grayMatter from 'gray-matter-browser';
-import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
 import Bio from './component/Bio';
+import PostCard from './component/PostCard';
+import './App.css';
 
 function App() {
   const [postList, setPostList] = useState<

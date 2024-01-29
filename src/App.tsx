@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import grayMatter from 'gray-matter-browser';
 import PostCard from './component/PostCard';
+import PageHeader from './component/PageHeader';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -41,23 +42,7 @@ function App() {
 
   return (
     <div className="page-wrapper">
-      <header className="page-header">
-        <div className="page-header-wrapper">
-          <div className="home-section">
-            <a className="link" href="/">
-              bono-log
-            </a>
-          </div>
-          <div className="category-section">
-            <a className="link" href="/">
-              about
-            </a>
-            <a className="link" href="/">
-              pages
-            </a>
-          </div>
-        </div>
-      </header>
+      <PageHeader />
       <body>
         <div className="page-content">
           <p>Hello, Bono-log!</p>

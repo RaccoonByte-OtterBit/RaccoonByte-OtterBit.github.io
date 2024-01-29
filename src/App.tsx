@@ -4,35 +4,39 @@ import grayMatter from 'gray-matter-browser';
 import PostCard from './component/PostCard';
 
 function App() {
-  const [postData, setPostData] = useState<{
-    title: string;
-    date: string;
-    author: string;
-    categories: string;
-    content: string;
-  }>({
-    title: '',
-    date: '',
-    author: '',
-    categories: '',
-    content: '',
-  });
+  const [postList, setPostList] = useState<
+    {
+      id: number;
+      title: string;
+      date: string;
+      author: string;
+      categories: string;
+      content: string;
+    }[]
+  >([]);
+
+  const postPaths = ['/post/test.md', '/post/test2.md', '/post/test3.md'];
 
   useEffect(() => {
-    const postPath = '/post/test.md';
-
-    fetch(postPath)
-      .then((response) => response.text())
-      .then((data) => {
-        const { content, data: frontmatterData } = grayMatter(data);
-        setPostData({
-          title: frontmatterData.title,
-          date: frontmatterData.date,
-          author: frontmatterData.author,
-          categories: frontmatterData.categories,
-          content,
-        });
-      });
+    Promise.all(
+      postPaths.map((postPath) =>
+        fetch(postPath)
+          .then((response) => response.text())
+          .then((data) => {
+            const { content, data: frontmatterData } = grayMatter(data);
+            return {
+              id: frontmatterData.id,
+              title: frontmatterData.title,
+              date: frontmatterData.date,
+              author: frontmatterData.author,
+              categories: frontmatterData.categories,
+              content,
+            };
+          })
+      )
+    ).then((posts) => {
+      setPostList(posts);
+    });
   }, []);
 
   return (
@@ -57,7 +61,7 @@ function App() {
       <body>
         <div className="page-content">
           <p>Hello, Bono-log!</p>
-          <PostCard postData={postData} />
+          <PostCard postList={postList} />
         </div>
       </body>
       <footer className="page-footer-wrapper">

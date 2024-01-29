@@ -3,6 +3,7 @@ import './App.css';
 import grayMatter from 'gray-matter-browser';
 import PostCard from './component/PostCard';
 import PageHeader from './component/PageHeader';
+import PageFooter from './component/PageFooter';
 
 function App() {
   const [postList, setPostList] = useState<
@@ -49,11 +50,7 @@ function App() {
           <PostCard postList={postList} />
         </div>
       </body>
-      <footer className="page-footer-wrapper">
-        <div className="page-footer">
-          <p>copyright</p>
-        </div>
-      </footer>
+      <PageFooter />
     </div>
   );
 }

@@ -1,57 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import grayMatter from 'gray-matter-browser';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
-import Bio from './component/Bio';
-import PostCard from './component/PostCard';
+import Home from './component/Home';
+import NotFound from './component/NotFound';
+
 import './App.css';
 
 function App() {
-  const [postList, setPostList] = useState<
-    {
-      id: number;
-      title: string;
-      date: string;
-      author: string;
-      categories: string;
-      content: string;
-    }[]
-  >([]);
-
-  const postPaths = ['/post/test.md', '/post/test2.md', '/post/test3.md'];
-
-  useEffect(() => {
-    Promise.all(
-      postPaths.map((postPath) =>
-        fetch(postPath)
-          .then((response) => response.text())
-          .then((data) => {
-            const { content, data: frontmatterData } = grayMatter(data);
-            return {
-              id: frontmatterData.id,
-              title: frontmatterData.title,
-              date: frontmatterData.date,
-              author: frontmatterData.author,
-              categories: frontmatterData.categories,
-              content,
-            };
-          })
-      )
-    ).then((posts) => {
-      setPostList(posts);
-    });
-  }, []);
-
   return (
     <div className="page-wrapper">
-      <PageHeader />
-      <body>
-        <div className="page-content">
-          <Bio />
-          <PostCard postList={postList} />
-        </div>
-      </body>
-      <PageFooter />
+      <BrowserRouter>
+        <PageHeader />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <PageFooter />
+      </BrowserRouter>
     </div>
   );
 }

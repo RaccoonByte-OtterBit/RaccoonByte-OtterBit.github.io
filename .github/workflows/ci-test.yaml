@@ -1,11 +1,11 @@
-name: test when PR to main
+name: CI
 
 on:
   pull_request:
     branches: [ "main" ]
     
 jobs:
-  deploy:
+  run-test:
     runs-on: ubuntu-latest
       
     steps:

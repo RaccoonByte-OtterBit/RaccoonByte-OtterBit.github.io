@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageHeader from './component/PageHeader';
 import PageFooter from './component/PageFooter';
+import PageDetail from './component/PageDetail';
 import Home from './component/Home';
 import NotFound from './component/NotFound';
 
@@ -14,6 +15,7 @@ function App() {
         <PageHeader />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="post/:id" element={<PageDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <PageFooter />

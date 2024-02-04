@@ -49,10 +49,12 @@
     ]
   },
   "devDependencies": {
+    "@types/webpack-env": "^1.18.4",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "webpack-env": "^0.8.0"
   }
 }

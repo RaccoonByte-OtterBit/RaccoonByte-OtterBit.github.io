@@ -1,9 +1,9 @@
 ---
 id: 6
-title: 비전공자를 위한 자료구조 자료구조가 뭐야??
+title: '[비전공자를 위한 자료구조] #1 자료구조가 뭐야??'
 date: '2023-02-03'
-author: raccoon
-categories: data-structure
+author: 'raccoon'
+categories: 'data-structure'
 ---
 
 ## 🌈 Content

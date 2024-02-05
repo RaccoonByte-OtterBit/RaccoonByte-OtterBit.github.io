@@ -18,7 +18,7 @@ function Home() {
   const postContext = require.context('../../public/post', true, /\.md$/);
   const postPaths = postContext
     .keys()
-    .map((key) => postContext.resolve(key).replace('./public', ''));
+    .map((key) => postContext.resolve(key).toString().replace('./public', ''));
 
   useEffect(() => {
     Promise.all(

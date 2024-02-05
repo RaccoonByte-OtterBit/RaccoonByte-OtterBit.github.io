@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageHeader from './components/PageHeader';
 import PageFooter from './components/PageFooter';
 import PageDetail from './components/PageDetail';
-import Home from './components/pages/Home';
-import NotFound from './components/pages/NotFound';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 import './App.css';
 

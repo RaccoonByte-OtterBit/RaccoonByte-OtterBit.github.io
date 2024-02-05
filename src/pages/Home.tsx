@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import grayMatter from 'gray-matter-browser';
-import Bio from '../Bio';
-import PostCard from '../PostCard';
+import Bio from '../components/Bio';
+import PostCard from '../components/PostCard';
 
 function Home() {
   const [postList, setPostList] = useState<

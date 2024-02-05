@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PageHeader from './component/PageHeader';
-import PageFooter from './component/PageFooter';
-import PageDetail from './component/PageDetail';
-import Home from './component/pages/Home';
-import NotFound from './component/pages/NotFound';
+import PageHeader from './components/PageHeader';
+import PageFooter from './components/PageFooter';
+import PageDetail from './components/PageDetail';
+import Home from './components/pages/Home';
+import NotFound from './components/pages/NotFound';
 
 import './App.css';
 

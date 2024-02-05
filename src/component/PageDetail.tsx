@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 function PageDetail() {
   const location = useLocation();
@@ -14,7 +15,9 @@ function PageDetail() {
         <div className="post-categories">{postData.categories}</div>
       </div>
       <div className="post-content">
-        <ReactMarkdown>{postData.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {postData.content}
+        </ReactMarkdown>
       </div>
     </div>
   );

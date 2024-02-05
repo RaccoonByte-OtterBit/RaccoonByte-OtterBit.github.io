@@ -15,15 +15,15 @@ function Home() {
     }[]
   >([]);
 
-  const postContext = require.context('../../public/post', true, /\.md$/);
-  const postPaths = postContext
+  const postPaths = require
+    .context('/public/post', true, /\.md$/)
     .keys()
-    .map((key) => postContext.resolve(key).replace('./public', ''));
+    .map((path) => path.toString());
 
   useEffect(() => {
     Promise.all(
       postPaths.map((postPath) =>
-        fetch(postPath)
+        fetch(`post/${postPath}`)
           .then((response) => response.text())
           .then((data) => {
             const { content, data: frontmatterData } = grayMatter(data);

@@ -27,7 +27,7 @@
   .post-card {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 140px;
     width: 1000px;
     border: 1px solid;
     border-radius: 6px;

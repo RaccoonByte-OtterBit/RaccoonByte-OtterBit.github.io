@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 function PageDetail() {
   const location = useLocation();
@@ -15,7 +16,7 @@ function PageDetail() {
         <div className="post-categories">{postData.categories}</div>
       </div>
       <div className="post-content">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
           {postData.content}
         </ReactMarkdown>
       </div>

@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 import PageHeader from '../PageHeader';
 
 describe('PageHeader Component', () => {
-  test('Header Componet에 포함되어 있는 단어가 잘 보여야 한다', () => {
+  test('Header Component에 포함되어 있는 단어가 잘 보여야 한다', () => {
     render(
       <MemoryRouter>
         <PageHeader />

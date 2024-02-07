@@ -4,6 +4,13 @@
   padding: 30px;
 }
 
+.page-header-wrapper {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+}
+
 .page-header {
   padding: 20px;
   vertical-align: middle;
@@ -12,6 +19,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
 }
 
 .post-card-wrapper:hover .post-title {
@@ -74,14 +83,6 @@
       font-size: 13px;
     }
   }
-}
-
-.home-section {
-  float: left;
-}
-
-.category-section {
-  float: right;
 }
 
 .link {

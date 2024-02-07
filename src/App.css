@@ -1,7 +1,18 @@
+a {
+  text-decoration: none;
+}
 .page-wrapper {
   text-align: center;
   position: relative;
   padding: 30px;
+}
+
+.page-header-wrapper {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
 }
 
 .page-header {
@@ -12,6 +23,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.link {
+  color: #000;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.link:hover {
+  font-weight: bolder;
+}
+
+.active {
+  font-weight: 800;
 }
 
 .post-card-wrapper:hover .post-title {
@@ -74,16 +101,4 @@
       font-size: 13px;
     }
   }
-}
-
-.home-section {
-  float: left;
-}
-
-.category-section {
-  float: right;
-}
-
-.link {
-  padding: 5px;
 }

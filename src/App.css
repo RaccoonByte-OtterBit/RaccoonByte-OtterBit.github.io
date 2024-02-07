@@ -38,13 +38,13 @@
     text-decoration: none;
     color: #000;
 
-    .post-title {
+    .title {
       text-align: left;
       font-size: 20px;
       font-weight: bold;
     }
 
-    .post-content {
+    .summary {
       text-align: left;
       font-size: 15px;
       display: -webkit-box;
@@ -55,18 +55,7 @@
       word-break: break-word;
     }
 
-    .post-content h1,
-    .post-content h2,
-    .post-content h3,
-    .post-content h4,
-    .post-content h5,
-    .post-content h6 {
-      font-size: inherit;
-      font-weight: inherit;
-      margin: 0;
-    }
-
-    .post-info {
+    .info {
       display: flex;
       justify-content: space-between;
       margin-top: auto;

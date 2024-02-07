@@ -2,8 +2,8 @@ import React from 'react';
 
 function PageHeader() {
   return (
-    <header className="page-header">
-      <div className="page-header-wrapper">
+    <div className="page-header-wrapper">
+      <header className="page-header">
         <div className="home-section">
           <a className="link" href="/">
             bono-log
@@ -17,8 +17,8 @@ function PageHeader() {
             pages
           </a>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
 export default PageHeader;

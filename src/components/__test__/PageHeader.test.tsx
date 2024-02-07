@@ -10,7 +10,7 @@ describe('PageHeader Component', () => {
         <PageHeader />
       </MemoryRouter>
     );
-    const existedTexts = ['bono-log', 'about', 'pages'];
+    const existedTexts = ['bono-log', 'about', 'posts'];
 
     existedTexts.forEach((text) => {
       const element = screen.getByText(text);

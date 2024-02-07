@@ -17,7 +17,7 @@ function PageHeader() {
             about
           </a>
           <a className="link" href="/">
-            pages
+            posts
           </a>
         </div>
       </header>

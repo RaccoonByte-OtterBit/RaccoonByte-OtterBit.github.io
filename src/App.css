@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+/* start | PostCard style */
 .post-card-wrapper:hover .post-title {
   text-decoration: underline;
 }
@@ -64,6 +64,7 @@
     }
   }
 }
+/* end | PostCard Style */
 
 .home-section {
   float: left;

@@ -16,9 +16,6 @@ function PageHeader() {
           <a className="link" href="/">
             about
           </a>
-          <a className="link" href="/">
-            posts
-          </a>
         </div>
       </header>
     </div>

@@ -33,11 +33,13 @@ function PostCard({ postList }: PostCardProps) {
             state={{ post: postData }}
             className="post-card"
           >
-            <div className="post-title">{postData.title}</div>
-            <p className="post-content">{extractMarkdown(postData.content)}</p>
-            <div className="post-info">
-              <div className="post-date">{postData.date}</div>
-              <div className="post-categories">{postData.categories}</div>
+            <div className="post-card-title">{postData.title}</div>
+            <p className="post-card-summary">
+              {extractMarkdown(postData.content)}
+            </p>
+            <div className="post-card-info">
+              <div className="post-card-date">{postData.date}</div>
+              <div className="post-card-categories">{postData.categories}</div>
             </div>
           </Link>
         </div>

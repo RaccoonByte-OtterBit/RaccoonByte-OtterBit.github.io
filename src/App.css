@@ -1,11 +1,16 @@
+/* common style */
+
 a {
   text-decoration: none;
 }
+
 .page-wrapper {
   text-align: center;
   position: relative;
   padding: 30px;
 }
+
+/* PageHeader style */
 
 .page-header-wrapper {
   display: flex;
@@ -65,13 +70,13 @@ a {
     text-decoration: none;
     color: #000;
 
-    .post-title {
+    .post-card-title {
       text-align: left;
       font-size: 20px;
       font-weight: bold;
     }
 
-    .post-content {
+    .post-card-summary {
       text-align: left;
       font-size: 15px;
       display: -webkit-box;
@@ -82,18 +87,7 @@ a {
       word-break: break-word;
     }
 
-    .post-content h1,
-    .post-content h2,
-    .post-content h3,
-    .post-content h4,
-    .post-content h5,
-    .post-content h6 {
-      font-size: inherit;
-      font-weight: inherit;
-      margin: 0;
-    }
-
-    .post-info {
+    .post-card-info {
       display: flex;
       justify-content: space-between;
       margin-top: auto;

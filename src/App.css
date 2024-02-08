@@ -13,6 +13,7 @@
 /* end | common style */
 
 /* start | PageHeader style */
+
 .page-header {
   padding: 20px;
   vertical-align: middle;
@@ -34,6 +35,7 @@
 /* end | PageHeader style */
 
 /* start | PostCard style */
+
 .post-card-wrapper:hover .post-title {
   text-decoration: underline;
 }
@@ -84,4 +86,5 @@
     }
   }
 }
+
 /* end | PostCard Style */

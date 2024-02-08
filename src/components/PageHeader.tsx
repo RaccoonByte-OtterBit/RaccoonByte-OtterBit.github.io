@@ -13,7 +13,7 @@ function PageHeader() {
           </a>
         </div>
         <div className="category-section">
-          <a className="link" href="/">
+          <a className="link" href="/about">
             about
           </a>
         </div>

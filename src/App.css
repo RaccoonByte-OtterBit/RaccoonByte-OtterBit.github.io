@@ -1,4 +1,4 @@
-/* start | common style */
+/* common style */
 
 .page-wrapper {
   text-align: center;
@@ -10,9 +10,7 @@
   padding: 5px;
 }
 
-/* end | common style */
-
-/* start | PageHeader style */
+/* PageHeader style */
 
 .page-header {
   padding: 20px;
@@ -32,9 +30,7 @@
   float: right;
 }
 
-/* end | PageHeader style */
-
-/* start | PostCard style */
+/* PostCard style */
 
 .post-card-wrapper:hover .post-title {
   text-decoration: underline;
@@ -86,5 +82,3 @@
     }
   }
 }
-
-/* end | PostCard Style */

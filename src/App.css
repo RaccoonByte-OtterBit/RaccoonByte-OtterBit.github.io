@@ -4,6 +4,11 @@
   padding: 30px;
 }
 
+.link {
+  padding: 5px;
+}
+
+/* start | PageHeader style */
 .page-header {
   padding: 20px;
   vertical-align: middle;
@@ -13,6 +18,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.home-section {
+  float: left;
+}
+
+.category-section {
+  float: right;
+}
+
+/* end | PageHeader style */
+
 /* start | PostCard style */
 .post-card-wrapper:hover .post-title {
   text-decoration: underline;
@@ -65,15 +81,3 @@
   }
 }
 /* end | PostCard Style */
-
-.home-section {
-  float: left;
-}
-
-.category-section {
-  float: right;
-}
-
-.link {
-  padding: 5px;
-}

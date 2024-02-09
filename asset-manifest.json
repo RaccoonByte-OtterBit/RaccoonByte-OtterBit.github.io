@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.ec6ac0ed.css",
-    "main.js": "/static/js/main.a1eb2fc7.js",
+    "main.js": "/static/js/main.2560a558.js",
     "static/js/27.8c93612d.chunk.js": "/static/js/27.8c93612d.chunk.js",
+    "static/media/otter-scss-grammer.md": "/static/media/otter-scss-grammer.fdfb6f4b5b190758ee33.md",
     "static/media/otter-what-is-sass.md": "/static/media/otter-what-is-sass.f8e09446d2f8a78b600c.md",
     "static/media/otter-what-is-css.md": "/static/media/otter-what-is-css.a5a1433166f6c9a69801.md",
     "static/media/raccoon-data-structure-0.md": "/static/media/raccoon-data-structure-0.508cda4c3d988b878106.md",
@@ -11,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.ec6ac0ed.css",
-    "static/js/main.a1eb2fc7.js"
+    "static/js/main.2560a558.js"
   ]
 }

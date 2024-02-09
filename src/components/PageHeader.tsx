@@ -13,11 +13,8 @@ function PageHeader() {
           </a>
         </div>
         <div className="category-section">
-          <a className="link" href="/">
+          <a className={`link ${currentPage === '/about' ? 'active' : ''}`} href="/about">
             about
-          </a>
-          <a className="link" href="/">
-            posts
           </a>
         </div>
       </header>

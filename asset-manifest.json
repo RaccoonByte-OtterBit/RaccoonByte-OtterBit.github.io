@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/na-log/static/css/main.62bbae06.css",
-    "main.js": "/na-log/static/js/main.973eba7f.js",
-    "static/js/27.d27b0279.chunk.js": "/na-log/static/js/27.d27b0279.chunk.js",
-    "static/media/otter-scss-grammer.md": "/na-log/static/media/otter-scss-grammer.fdfb6f4b5b190758ee33.md",
-    "static/media/otter-what-is-sass.md": "/na-log/static/media/otter-what-is-sass.a7d8bbaf892d2ba0cc1d.md",
-    "static/media/otter-what-is-css.md": "/na-log/static/media/otter-what-is-css.439478907dd1cce4c649.md",
-    "static/media/raccoon-data-structure-0.md": "/na-log/static/media/raccoon-data-structure-0.508cda4c3d988b878106.md",
-    "static/media/raccoon-data-structure-1.md": "/na-log/static/media/raccoon-data-structure-1.25e334cd584d70f554c5.md",
-    "index.html": "/na-log/index.html"
+    "main.css": "/static/css/main.62bbae06.css",
+    "main.js": "/static/js/main.09423e7c.js",
+    "static/js/27.8c93612d.chunk.js": "/static/js/27.8c93612d.chunk.js",
+    "static/media/otter-scss-grammer.md": "/static/media/otter-scss-grammer.fdfb6f4b5b190758ee33.md",
+    "static/media/otter-what-is-sass.md": "/static/media/otter-what-is-sass.a7d8bbaf892d2ba0cc1d.md",
+    "static/media/otter-what-is-css.md": "/static/media/otter-what-is-css.439478907dd1cce4c649.md",
+    "static/media/raccoon-data-structure-0.md": "/static/media/raccoon-data-structure-0.508cda4c3d988b878106.md",
+    "static/media/raccoon-data-structure-1.md": "/static/media/raccoon-data-structure-1.25e334cd584d70f554c5.md",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.62bbae06.css",
-    "static/js/main.973eba7f.js"
+    "static/js/main.09423e7c.js"
   ]
 }

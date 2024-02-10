@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bono-log/static/css/main.62bbae06.css",
-    "main.js": "/bono-log/static/js/main.bf0c4cd3.js",
+    "main.js": "/bono-log/static/js/main.53ffa8f7.js",
     "static/js/27.8c93612d.chunk.js": "/bono-log/static/js/27.8c93612d.chunk.js",
     "static/media/otter-scss-grammer.md": "/bono-log/static/media/otter-scss-grammer.fdfb6f4b5b190758ee33.md",
     "static/media/otter-what-is-sass.md": "/bono-log/static/media/otter-what-is-sass.a7d8bbaf892d2ba0cc1d.md",
@@ -12,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.62bbae06.css",
-    "static/js/main.bf0c4cd3.js"
+    "static/js/main.53ffa8f7.js"
   ]
 }

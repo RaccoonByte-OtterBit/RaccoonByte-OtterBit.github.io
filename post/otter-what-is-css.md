@@ -102,7 +102,7 @@ CSS Cascading은 다음 3가지에 의해 결정된다.
    </head>
    ```
 
-3. <link>로 연결된 CSS 파일
+3. `<link>`로 연결된 CSS 파일
 
    HTML 문서에 외부 CSS 파일을 연결하는 표준 방법이다. 가장 많이 사용하는 방법이 아닐까 싶다.
 
@@ -112,7 +112,7 @@ CSS Cascading은 다음 3가지에 의해 결정된다.
    </head>
    ```
 
-4. <link>로 연결된 CSS 파일 내부의 @import 문
+4. `<link>`로 연결된 CSS 파일 내부의 @import 문
 
    외부 css 파일 내에서 다른 css 파일을 가져오는 것이므로 그닥 좋지 못하다.
 

@@ -254,11 +254,11 @@ setting.json을 열고, 다음과 같이 코드를 추가해준다.
 1. 프로젝트 폴더에서 `$ npm install sass` 로 Dart Sass를 설치해준다.
 2. `package-lock.json`의 `‘dependencies’`에 잘 설치됐는지 확인한다.
 
-   ![Untitled](https://github.com/bono-log/bono-log.github.io/assets/144116866/b8ba9531-beec-4914-af91-d4fb75b6b50b)
+<img src="https://github.com/bono-log/bono-log.github.io/assets/144116866/b8ba9531-beec-4914-af91-d4fb75b6b50b" width="400"/>
 
 3. App.css 이름을 App.scss로 바꿔준다.
 
-   ![Untitled](https://github.com/bono-log/bono-log.github.io/assets/144116866/4e54bfd0-ee7e-467a-890e-e9172954e3fe)
+![Untitled](https://github.com/bono-log/bono-log.github.io/assets/144116866/4e54bfd0-ee7e-467a-890e-e9172954e3fe)
 
 4. App.js or App.tsx에서 import css 확장자명도 scss로 변경해준다!
 

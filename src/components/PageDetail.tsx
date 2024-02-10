@@ -10,11 +10,13 @@ function PageDetail() {
 
   return (
     <div className="page-detail">
-      <h1>{postData.title}</h1>
-      <div className="post-info">
-        <div className="post-date">{postData.date}</div>
-        <div className="post-categories">{postData.categories}</div>
-      </div>
+      <header className="post-header">
+        <h1>{postData.title}</h1>
+        <div className="post-info">
+          <div className="post-date">{postData.date}</div>
+          <div className="post-categories">{postData.categories}</div>
+        </div>
+      </header>
       <div className="post-content">
         <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
           {postData.content}

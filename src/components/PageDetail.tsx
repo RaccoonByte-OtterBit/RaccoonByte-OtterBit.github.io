@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import rehypeHighlight from 'rehype-highlight';
+import 'highlight.js/styles/a11y-dark.css';
 
 function PageDetail() {
   const location = useLocation();

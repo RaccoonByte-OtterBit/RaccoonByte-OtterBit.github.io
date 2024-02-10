@@ -10,6 +10,66 @@ a {
   padding: 30px;
 }
 
+/* markdown style*/
+
+/* 인용구 */
+blockquote {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  padding: 3px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* 백틱 */
+code {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: tomato;
+}
+
+/* 표 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* 그림 */
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: auto;
+}
+figcaption {
+  color: #464646;
+  font: italic bolder smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+  margin-top: 5px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 목록 */
+ol {
+  padding-left: 15px;
+}
+ul {
+  padding-left: 15px;
+}
+li {
+  margin: 10px;
+}
+
 /* PageHeader style */
 
 .page-header-wrapper {

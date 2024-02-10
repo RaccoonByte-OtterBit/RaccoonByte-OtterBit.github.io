@@ -121,6 +121,29 @@ li {
   text-align: left;
 }
 
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-date {
+  font-size: larger;
+  font-weight: bolder;
+  color: #727272;
+}
+
+.post-categories {
+  align-self: flex-start;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  background-color: #727272;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 /* PostCard style */
 
 .post-card-wrapper:hover .post-title {

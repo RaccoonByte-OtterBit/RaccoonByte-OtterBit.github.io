@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <div className="page-wrapper">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <PageHeader />
         <Routes>
           <Route path="/" element={<Home />} />

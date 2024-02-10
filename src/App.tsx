@@ -16,7 +16,7 @@ function App() {
         <PageHeader />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about/" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="post/:id" element={<PageDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

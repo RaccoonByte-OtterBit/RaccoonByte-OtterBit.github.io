@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
+import rehypeHighlight from 'rehype-highlight';
 
 function PageDetail() {
   const location = useLocation();
@@ -18,7 +19,10 @@ function PageDetail() {
         </div>
       </header>
       <div className="post-content">
-        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown
+          rehypePlugins={[rehypeRaw, rehypeHighlight]}
+          remarkPlugins={[remarkGfm]}
+        >
           {postData.content}
         </ReactMarkdown>
       </div>

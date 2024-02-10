@@ -46,6 +46,8 @@ a {
   font-weight: 800;
 }
 
+/* PostCard style */
+
 .post-card-wrapper:hover .post-title {
   text-decoration: underline;
 }

@@ -9,7 +9,7 @@ function PageHeader() {
       <header className="page-header">
         <div className="home-section">
           <Link
-            to="/"
+            to={{ pathname: '//' }}
             className={`link ${currentPage === '/' ? 'active' : ''}`}
           >
             na-log

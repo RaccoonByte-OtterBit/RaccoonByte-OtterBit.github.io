@@ -3,7 +3,7 @@ import React from 'react';
 function Bio() {
   return (
     <div className="bio">
-      <p>Hello, Bono-log!</p>
+      <p>Hello, na-log!</p>
     </div>
   );
 }

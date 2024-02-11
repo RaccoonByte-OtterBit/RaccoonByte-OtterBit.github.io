@@ -9,11 +9,14 @@ function PageHeader() {
       <header className="page-header">
         <div className="home-section">
           <a className={`link ${currentPage === '/' ? 'active' : ''}`} href="/">
-            bono-log
+            na-log
           </a>
         </div>
         <div className="category-section">
-          <a className={`link ${currentPage === '/about' ? 'active' : ''}`} href="/about">
+          <a
+            className={`link ${currentPage === '/about' ? 'active' : ''}`}
+            href="/about"
+          >
             about
           </a>
         </div>

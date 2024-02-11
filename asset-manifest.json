@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/na-log/static/css/main.62bbae06.css",
-    "main.js": "/na-log/static/js/main.15ef3c80.js",
-    "static/js/27.d27b0279.chunk.js": "/na-log/static/js/27.d27b0279.chunk.js",
+    "main.js": "/na-log/static/js/main.1ff3453d.js",
+    "static/js/27.e43ddc7e.chunk.js": "/na-log/static/js/27.e43ddc7e.chunk.js",
     "static/media/otter-scss-grammer.md": "/na-log/static/media/otter-scss-grammer.fdfb6f4b5b190758ee33.md",
     "static/media/otter-what-is-sass.md": "/na-log/static/media/otter-what-is-sass.a7d8bbaf892d2ba0cc1d.md",
     "static/media/otter-what-is-css.md": "/na-log/static/media/otter-what-is-css.439478907dd1cce4c649.md",
@@ -12,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.62bbae06.css",
-    "static/js/main.15ef3c80.js"
+    "static/js/main.1ff3453d.js"
   ]
 }

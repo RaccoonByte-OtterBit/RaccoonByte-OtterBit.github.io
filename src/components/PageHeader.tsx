@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 function PageHeader() {
   const currentPage = useLocation().pathname;
@@ -8,14 +8,20 @@ function PageHeader() {
     <div className="page-header-wrapper">
       <header className="page-header">
         <div className="home-section">
-          <a className={`link ${currentPage === '/' ? 'active' : ''}`} href="/">
-            bono-log
-          </a>
+          <Link
+            to="/"
+            className={`link ${currentPage === '/' ? 'active' : ''}`}
+          >
+            na-log
+          </Link>
         </div>
         <div className="category-section">
-          <a className={`link ${currentPage === '/about' ? 'active' : ''}`} href="/about">
+          <Link
+            to="/about"
+            className={`link ${currentPage === '/about' ? 'active' : ''}`}
+          >
             about
-          </a>
+          </Link>
         </div>
       </header>
     </div>

@@ -1,40 +1,40 @@
-# 🐾 Bono-Log 🐾
+# 🐾 Na-Log 🐾
 
 ## 🎉 Introduction
 
 안녕하세요! 😀
 
-Bono-Log는, Raccoon과 Otter가 함께 만드는 Tech git-blog입니다. \
+Na-Log는, Raccoon과 Otter가 함께 만드는 Tech git-blog입니다. \
 저희들의 성장 과정을 기록할 수 있도록 블로그 운영을 고려하게 되었고, \
 개발 역량을 향상시키기 위해 상용 플랫폼이 아닌, **자체 개발**을 하게 되었습니다! 😊
 
 저희들의 성장 과정 그리고 git-blog에 관심이 있으신 분들은 아래 링크로 확인해주세요!
 
-[🚀 Bono-Log 바로가기](https://bono-log.github.io/)
-
+[🚀 Na-Log 바로가기](https://nerd-animals.github.io/na-log/)
 
 ## 🦝 About Us 🦦
 
 ### Raccoon is..
+
 - 비전공 현직 개발자입니다.
 - 주로 프로젝트 관리를 맡고 있습니다.
 
 ### Otter is..
+
 - 비전공 개발 취준생입니다.
 - Front-end 개발을 맡고 있습니다.
 
 ## ⚡ Software Used
 
-Bono-Log 개발에는 아래와 같은 기술 스택이 사용되었습니다! 💪
+Na-Log 개발에는 아래와 같은 기술 스택이 사용되었습니다! 💪
 
-| Tech Stack | Used |
-| :----: | :----: |
-| Language | TypeScript |
-| FrameWork | React |
-| Package Manager | NPM |
-| CI/CD | GitHub Actions <br> GitHub Pages |
+|    Tech Stack    |                           Used                            |
+| :--------------: | :-------------------------------------------------------: |
+|     Language     |                        TypeScript                         |
+|    FrameWork     |                           React                           |
+| Package Manager  |                            NPM                            |
+|      CI/CD       |             GitHub Actions <br> GitHub Pages              |
 | Project Managing | GitHub Projects <br> GitHub MileStones <br> GitHub Issues |
-
 
 ## 📌 Develop Rule
 
@@ -52,7 +52,6 @@ Bono-Log 개발에는 아래와 같은 기술 스택이 사용되었습니다! �
 - Sprint 시작 전, Sprint 목표와 기간을 설정합니다.
   - 목표는 함께 설정합니다.
   - 주기는 1주~2주로 설정합니다.
-  
 - Sprint 종료 시, Self-Review를 통해 회고록을 작성합니다.
   - Self-Review는 30분을 넘지 않는 것을 목표로 합니다.
   - Self-Review 후, 기존 Sprint 종료와 동시에 새로운 Sprint를 재시작합니다.
@@ -91,7 +90,7 @@ GitHub Project를 통해 전체적인 프로젝트 상황을 확인합니다.
   - remove : 코드/파일/폴더 삭제
   - chore : 그 외, 모든 변경점
 - 예시) docs: update README.md / add Commit Message Convention
- 
+
 ### Branch Strategy
 
 저희는 GitHub Flow를 기반으로 Branch 전략을 구성하였습니다.
@@ -136,15 +135,14 @@ PR 작성부터 Merge되기까지 다음과 같은 규칙을 지켜야합니다.
 - 상대방의 Review를 통해 Approve된 PR만 merge합니다.
 - Merge 방식은 `Squash and merge`를 채택합니다.
 
-
 ## 👀 Contact Us
 
-Bono-Log 관련된 소통을 원하신다면, [GitHub Issues](https://github.com/bono-log/bono-log.github.io/issues/new/choose)를 활용해주세요! 😁 
+Na-Log 관련된 소통을 원하신다면, [GitHub Issues](https://github.com/nerd-animals/na-log/issues/new/choose)를 활용해주세요! 😁
 
 - 🐛 Bug Report
 - 📃 Suggestion
 - 🤷‍♀️ Question
-- 🪐 Etc.. 
+- 🪐 Etc..
 
 그 외, 문의는 아래 개인 E-mail을 활용해주세요!
 

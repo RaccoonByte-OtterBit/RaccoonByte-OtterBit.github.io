@@ -12,12 +12,12 @@ import './App.css';
 function App() {
   return (
     <div className="page-wrapper">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <PageHeader />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about/" element={<About />} />
-          <Route path="post/:id" element={<PageDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/post/:id" element={<PageDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <PageFooter />

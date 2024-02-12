@@ -10,7 +10,7 @@ Na-Log는, Raccoon과 Otter가 함께 만드는 Tech git-blog입니다. \
 
 저희들의 성장 과정 그리고 git-blog에 관심이 있으신 분들은 아래 링크로 확인해주세요!
 
-[🚀 Na-Log 바로가기](https://nerd-animals.github.io/na-log/)
+[🚀 Na-Log 바로가기](https://nerd-animals.github.io/na-log-react-backup/)
 
 ## 🦝 About Us 🦦
 
